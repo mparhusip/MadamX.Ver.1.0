@@ -21,20 +21,34 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
                                 <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                             </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI2-YQ-GeE">
-                                <rect key="frame" x="717" y="325" width="102" height="44"/>
+                            <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n5e-wR-AIb">
+                                <rect key="frame" x="44" y="296" width="808" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Group">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's move around inside the house with your camera" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTK-Sd-xw0">
-                                <rect key="frame" x="44" y="279" width="808" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OaQ-fq-don">
+                                        <rect key="frame" x="8" y="8" width="615" height="74"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Let's start with your bedroom. 
+(Go to your bedroom and scan the room)</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" multipleTouchEnabled="YES" alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI2-YQ-GeE">
+                                        <rect key="frame" x="643" y="27" width="118" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.97305089235305786" green="0.62696601533067464" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="r0f-At-YNW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -46,6 +60,8 @@
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="PI2-YQ-GeE" id="2vR-SE-njn"/>
+                        <outlet property="objectiveView" destination="OaQ-fq-don" id="QIH-GK-PYR"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>
@@ -53,43 +69,26 @@
             </objects>
             <point key="canvasLocation" x="16.741071428571427" y="44.927536231884062"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Fwr-Zu-zKa">
+        <!--GameStartView Controller-->
+        <scene sceneID="XcE-Th-PKh">
             <objects>
-                <viewController id="DJk-XN-lhU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TiT-Cc-6o4">
+                <viewController id="wtc-Fo-Ys3" userLabel="GameStartView Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y5M-uf-4Xe">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEf-Jg-pej">
-                                <rect key="frame" x="0.0" y="99" width="896" height="269"/>
-                            </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where do you want to start, John?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DW9-QL-glv">
-                                <rect key="frame" x="64" y="33" width="500" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PFc-Tl-cRn">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="XEf-Jg-pej" firstAttribute="top" secondItem="TiT-Cc-6o4" secondAttribute="top" constant="99" id="2pg-6s-pxL"/>
-                            <constraint firstItem="DW9-QL-glv" firstAttribute="leading" secondItem="TiT-Cc-6o4" secondAttribute="leadingMargin" id="G7Z-fs-pGj"/>
-                            <constraint firstItem="XEf-Jg-pej" firstAttribute="top" secondItem="DW9-QL-glv" secondAttribute="bottom" constant="27" id="PU8-LW-DOP"/>
-                            <constraint firstItem="rcY-d1-lZK" firstAttribute="bottom" secondItem="XEf-Jg-pej" secondAttribute="bottom" constant="25" id="UCX-l2-Z38"/>
-                            <constraint firstAttribute="trailing" secondItem="XEf-Jg-pej" secondAttribute="trailing" id="ZWk-76-jGA"/>
-                            <constraint firstItem="XEf-Jg-pej" firstAttribute="leading" secondItem="TiT-Cc-6o4" secondAttribute="leading" id="jWT-nG-CjQ"/>
-                            <constraint firstItem="rcY-d1-lZK" firstAttribute="trailing" secondItem="DW9-QL-glv" secondAttribute="trailing" constant="288" id="ltq-Kc-5Lc"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="rcY-d1-lZK"/>
+                        <viewLayoutGuide key="safeArea" id="cR7-h8-Gom"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xVC-iq-cqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IvC-ze-M4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-691" y="45"/>
+            <point key="canvasLocation" x="706.47321428571422" y="44.927536231884062"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Group" width="105" height="41"/>
-    </resources>
 </document>

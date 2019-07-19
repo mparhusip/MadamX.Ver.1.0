@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XRq-Ie-hvX">
     <device id="retina6_1" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -53,6 +53,199 @@
             </objects>
             <point key="canvasLocation" x="16.741071428571427" y="44.927536231884062"/>
         </scene>
+        <!--Logo Page View Controller-->
+        <scene sceneID="a79-s6-epC">
+            <objects>
+                <viewController id="xUd-Ym-M0W" customClass="LogoPageViewController" customModule="MadamX_Ver_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YLX-q1-7Ht">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="madam x black outer" translatesAutoresizingMaskIntoConstraints="NO" id="rM5-5g-zg0">
+                                <rect key="frame" x="281" y="42" width="335" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MADAM X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1m-Vg-mba">
+                                <rect key="frame" x="362" y="308" width="173" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="6vc-Hr-UXJ"/>
+                    </view>
+                    <connections>
+                        <segue destination="xiO-TA-LrR" kind="show" identifier="progressView" id="4bP-X7-Adx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ByS-PX-BZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-691.07142857142856" y="-1165.217391304348"/>
+        </scene>
+        <!--Progress View-->
+        <scene sceneID="4nK-bR-gBJ">
+            <objects>
+                <viewController id="xiO-TA-LrR" customClass="progressView" customModule="MadamX_Ver_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bI4-Eu-hrk">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bed4" translatesAutoresizingMaskIntoConstraints="NO" id="eN4-f2-t6W">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="madam x black outer round" translatesAutoresizingMaskIntoConstraints="NO" id="jtg-7X-4Zm">
+                                <rect key="frame" x="293" y="20" width="310" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CAu-aL-9e2">
+                                <rect key="frame" x="64" y="368" width="768" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vacuum-cleaner" translatesAutoresizingMaskIntoConstraints="NO" id="8ND-az-uDu">
+                                <rect key="frame" x="56" y="338" width="46" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fortune favors the prepared mind... " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjy-zg-nCq">
+                                <rect key="frame" x="301" y="233" width="295" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="4eJ-m8-3FO"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="CAu-aL-9e2" id="txZ-vv-la2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S0N-vh-bWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="91.741071428571431" y="-1165.217391304348"/>
+        </scene>
+        <!--Start Page View Controller-->
+        <scene sceneID="B5I-38-EQZ">
+            <objects>
+                <viewController id="XRq-Ie-hvX" customClass="StartPageViewController" customModule="MadamX_Ver_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LoC-IC-Y39">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dis box" translatesAutoresizingMaskIntoConstraints="NO" id="epg-Qv-sPd">
+                                <rect key="frame" x="76" y="66" width="722" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="next-1" translatesAutoresizingMaskIntoConstraints="NO" id="XxX-19-RVR">
+                                <rect key="frame" x="335" y="302" width="205" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="a1h-il-uuM" appends="YES" id="P0l-VG-QqF"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="Cop-47-4pO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UjI-GP-zmW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="a1h-il-uuM">
+                    <connections>
+                        <action selector="agreeButton:" destination="XRq-Ie-hvX" id="Qam-Eb-8tm"/>
+                        <segue destination="09O-wq-gS9" kind="show" identifier="toViewController" id="R69-ua-Iva"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="847.76785714285711" y="-1165.217391304348"/>
+        </scene>
+        <!--Home Page View Controller-->
+        <scene sceneID="SbJ-Ct-8cw">
+            <objects>
+                <viewController id="09O-wq-gS9" customClass="HomePageViewController" customModule="MadamX_Ver_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jgy-Ie-2p3">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="madam x black outer round" translatesAutoresizingMaskIntoConstraints="NO" id="hNi-85-h2c">
+                                <rect key="frame" x="384" y="46" width="128" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Madam X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coX-XV-6Sj">
+                                <rect key="frame" x="377" y="213" width="135" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PLAY GAME" translatesAutoresizingMaskIntoConstraints="NO" id="m6A-KB-Ylh">
+                                <rect key="frame" x="206" y="269" width="186" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7pV-8g-F2t" appends="YES" id="WsF-Gh-cbF"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="My Profile" translatesAutoresizingMaskIntoConstraints="NO" id="rL2-29-gMu">
+                                <rect key="frame" x="477" y="269" width="215" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="AQJ-KK-0KJ"/>
+                    </view>
+                    <connections>
+                        <segue destination="bRW-VT-CNp" kind="show" identifier="toPrologue" id="d43-wW-g8K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BMW-az-J0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7pV-8g-F2t">
+                    <connections>
+                        <action selector="playgameButton:" destination="09O-wq-gS9" id="HlU-Xt-guw"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1612" y="-1165"/>
+        </scene>
+        <!--Prologue1 View Controller-->
+        <scene sceneID="Saf-Sh-0dr">
+            <objects>
+                <viewController id="bRW-VT-CNp" customClass="Prologue1ViewController" customModule="MadamX_Ver_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9wy-Pl-ssA">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="hit-Ql-Xql">
+                                <rect key="frame" x="77" y="72" width="737" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEE-MM-3Gn">
+                                <rect key="frame" x="98" y="99" width="695" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="big" translatesAutoresizingMaskIntoConstraints="NO" id="eKU-HA-fpc">
+                                <rect key="frame" x="342.5" y="295.5" width="205" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="LXq-FY-y5H"/>
+                    </view>
+                    <connections>
+                        <outlet property="prologueLabel" destination="ZEE-MM-3Gn" id="lsg-kC-YNA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZhR-gZ-zLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2311.6071428571427" y="-1165.217391304348"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="Fwr-Zu-zKa">
             <objects>
@@ -90,6 +283,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Dis box" width="705" height="184"/>
         <image name="Group" width="105" height="41"/>
+        <image name="My Profile" width="206" height="69"/>
+        <image name="PLAY GAME" width="198" height="61"/>
+        <image name="Rectangle" width="725" height="198"/>
+        <image name="bed4" width="6000" height="4000"/>
+        <image name="big" width="206" height="42"/>
+        <image name="madam x black outer" width="1135" height="2207"/>
+        <image name="madam x black outer round" width="136" height="175"/>
+        <image name="next-1" width="205" height="41"/>
+        <image name="vacuum-cleaner" width="298" height="298"/>
     </resources>
 </document>

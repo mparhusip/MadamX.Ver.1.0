@@ -21,6 +21,7 @@ class HomePageViewController: UIViewController, AVAudioPlayerDelegate {
         let homeSound = Bundle.main.path(forResource: "In Game 3", ofType: "wav")
         do{
             try homePlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath: homeSound!))
+            homePlayer.numberOfLoops = -1
         }catch{
             print(error)
         }
@@ -34,7 +35,7 @@ class HomePageViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func playgameButton(_ sender: Any) {
   
             performSegue(withIdentifier: "toPrologue", sender: nil)
-            homePlayer.pause()
+           // homePlayer.pause()
        
     }
 }

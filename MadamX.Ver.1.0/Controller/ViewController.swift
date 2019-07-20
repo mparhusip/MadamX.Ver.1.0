@@ -120,28 +120,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         objectiveView.text = contentStartUp[counterButton].getStartUpContent()
         counterButton+=1
         
-        if counterButton == 5 {
-            
-           nextButton.removeFromSuperview()
-
-            let buttonYes = UIButton.init(type: UIButton.ButtonType.roundedRect)
-           
-            buttonYes.frame = CGRect(x: 635, y: 320, width: 70, height: 55)
-//            buttonYes.center = view.center
-            buttonYes.setTitle("Yes", for: UIControl.State.normal)
-            buttonYes.setTitleColor(.white, for: UIControl.State.normal)
-            buttonYes.backgroundColor = #colorLiteral(red: 1, green: 0.6065336466, blue: 0, alpha: 1)
-            self.view.addSubview(buttonYes)
-            
-            let buttonNo = UIButton.init(type: UIButton.ButtonType.roundedRect)
-            buttonNo.frame = CGRect(x: 743, y: 320, width: 70, height: 55)
-            buttonNo.setTitle("No", for: UIControl.State.normal)
-            buttonNo.setTitleColor(.white, for: UIControl.State.normal)
-            buttonNo.backgroundColor = #colorLiteral(red: 1, green: 0.6065336466, blue: 0, alpha: 1)
-            self.view.addSubview(buttonNo)
-        }
-
-        
         sceneView.session.getCurrentWorldMap { (worldMap, Error) in
             guard let worldMap = worldMap else {
                 return self.setLabel.text = "Error getting current world map"
@@ -158,11 +136,43 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
             
         }
         
-        
-            //        if counterButton == 5 {
-//            
+        if counterButton == 5 {
+            
+           nextButton.removeFromSuperview()
+
+            let buttonYes = UIButton.init(type: UIButton.ButtonType.roundedRect)
+           
+            buttonYes.frame = CGRect(x: 635, y: 320, width: 70, height: 55)
+//            buttonYes.center = view.center
+            buttonYes.setTitle("Yes", for: UIControl.State.normal)
+            buttonYes.setTitleColor(.white, for: UIControl.State.normal)
+            buttonYes.backgroundColor = #colorLiteral(red: 1, green: 0.6065336466, blue: 0, alpha: 1)
+            buttonYes.addTarget(self, action: #selector(self.buttonYesPressed), for: UIControl.Event.touchUpInside)
+            self.view.addSubview(buttonYes)
+            
+            let buttonNo = UIButton.init(type: UIButton.ButtonType.roundedRect)
+            buttonNo.frame = CGRect(x: 743, y: 320, width: 70, height: 55)
+            buttonNo.setTitle("No", for: UIControl.State.normal)
+            buttonNo.setTitleColor(.white, for: UIControl.State.normal)
+            buttonNo.backgroundColor = #colorLiteral(red: 1, green: 0.6065336466, blue: 0, alpha: 1)
+            buttonNo.addTarget(self, action: #selector(self.buttonNoPressed), for: UIControl.Event.touchUpInside)
+            self.view.addSubview(buttonNo)
+        }
+
+//        if counterButton == 6 {
+//            performSegue(withIdentifier: "toStartPage", sender: nil)
 //        }
         
+        
+    }
+    
+    @objc func buttonYesPressed() {
+        objectiveView.text = "Go to the yard and scan the area"
+    }
+    
+    @objc func buttonNoPressed() {
+        
+        performSegue(withIdentifier: "toStartPage", sender: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {

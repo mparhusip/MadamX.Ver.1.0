@@ -8,16 +8,16 @@
 
 import Foundation
 
-class StartUpContent{
+class ContentStartScene{
     
-    var startUpContent: String
+    var startSceneContent1: String
     
-    init(startUpContent: String) {
-        self.startUpContent = startUpContent
+    init(startSceneContent1: String) {
+        self.startSceneContent1 = startSceneContent1
     }
     
-    func getStartUpContent() -> String {
-        return startUpContent
+    func getStartSceneContent1() -> String {
+        return startSceneContent1
     }
     
 }

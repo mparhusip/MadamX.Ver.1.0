@@ -52,6 +52,7 @@ class InsertNameViewController: UIViewController, UITextFieldDelegate
         userNameOut.delegate = self
         userNameOut.setPadding()
         userNameOut.bottomBorder()
+        userNameOut.autocapitalizationType = .words
         
         
 //        var getUserName = InsertNameViewController()

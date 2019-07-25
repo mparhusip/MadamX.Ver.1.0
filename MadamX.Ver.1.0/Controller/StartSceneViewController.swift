@@ -40,10 +40,10 @@ class StartSceneViewController: UIViewController, ARSCNViewDelegate {
         sceneView2.showsStatistics = true
         
         // Create a new scene
-        let scene2 = SCNScene(named: "art.scnassets/ship.scn")!
+//        let scene2 = SCNScene(named: "art.scnassets/ship.scn")!
         
         // Set the scene to the view
-        sceneView2.scene = scene2
+//        sceneView2.scene = scene2
     }
     
     @IBAction func next2ButtonPressed(_ sender: Any) {
@@ -65,6 +65,11 @@ class StartSceneViewController: UIViewController, ARSCNViewDelegate {
         
         
         
+    }
+    
+    @IBAction func cameraButtonPressed(_ sender: Any) {
+        
+        performSegue(withIdentifier: "toCamera", sender: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {

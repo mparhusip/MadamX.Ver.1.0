@@ -13,6 +13,7 @@ class GetDataViewController: UIViewController
 
     var text:String = ""
     
+    @IBOutlet weak var warmestLabel: UILabel!
     @IBOutlet weak var nextOut: UIButton!
     @IBOutlet weak var fromUserNameOut:UILabel?
     
@@ -23,6 +24,17 @@ class GetDataViewController: UIViewController
         fromUserNameOut?.text = text
         
         nextOut.layer.cornerRadius = 10
+        
+        warmestLabel.layer.borderColor = UIColor.black.cgColor;
+        warmestLabel.layer.borderWidth = 2.0
+        warmestLabel.layer.cornerRadius = 1.0
+        
+        
     }
         
+    @IBAction func nextPressed(_ sender: Any) {
+        
+        performSegue(withIdentifier: "toArView", sender: nil)
+        
+    }
 }

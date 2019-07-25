@@ -60,8 +60,9 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         
     }
     
-
+    var text: String = ""
    
+    @IBOutlet weak var fromUserNameOut: UILabel!
     
     @IBOutlet weak var objectiveView: UITextView!
     
@@ -95,10 +96,10 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+//        let scene = SCNScene(named: "art.scnassets/ship.scn")!
         
         // Set the scene to the view
-        sceneView.scene = scene
+//        sceneView.scene = scene
         
         setLabel = UILabel(frame: CGRect(x: sceneView.frame.size.width / 2, y: sceneView.frame.size.height / 2, width: self.view.frame.size.width - 12*2, height: self.view.frame.size.height - 10*2))
         
@@ -109,6 +110,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
             
         }
         
+   fromUserNameOut?.text = text
         
     }
     
@@ -146,7 +148,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
 //            buttonYes.center = view.center
             buttonYes.setTitle("Yes", for: UIControl.State.normal)
             buttonYes.setTitleColor(.white, for: UIControl.State.normal)
-            buttonYes.backgroundColor = #colorLiteral(red: 1, green: 0.6065336466, blue: 0, alpha: 1)
+            buttonYes.backgroundColor = #colorLiteral(red: 0.2643045187, green: 0.7090201974, blue: 0.5769197345, alpha: 1)
             buttonYes.addTarget(self, action: #selector(self.buttonYesPressed), for: UIControl.Event.touchUpInside)
             self.view.addSubview(buttonYes)
             
@@ -154,7 +156,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
             buttonNo.frame = CGRect(x: 743, y: 320, width: 70, height: 55)
             buttonNo.setTitle("No", for: UIControl.State.normal)
             buttonNo.setTitleColor(.white, for: UIControl.State.normal)
-            buttonNo.backgroundColor = #colorLiteral(red: 1, green: 0.6065336466, blue: 0, alpha: 1)
+            buttonNo.backgroundColor = #colorLiteral(red: 0.2643045187, green: 0.7090201974, blue: 0.5769197345, alpha: 1)
             buttonNo.addTarget(self, action: #selector(self.buttonNoPressed), for: UIControl.Event.touchUpInside)
             self.view.addSubview(buttonNo)
         }

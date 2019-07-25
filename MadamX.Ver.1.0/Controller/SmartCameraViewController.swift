@@ -32,15 +32,16 @@ let entityName = "StoredImage"
         private var managedContext: NSManagedObjectContext!
         
         @IBOutlet weak var smartCamOut: UIButton!
+      
         override func viewDidLoad()
         {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
             
-        }
+//        }
         
-        @IBAction func smartCamButton(_ sender: Any)
-        {
+//        @IBAction func smartCamButton(_ sender: Any)
+//        {
 //            let captureSession = AVCaptureSession()
 //            captureSession.sessionPreset = .photo
 //
@@ -51,8 +52,9 @@ let entityName = "StoredImage"
 //            captureSession.startRunning()
             
             videoPreviewLayer = AVCaptureVideoPreviewLayer()
-            videoPreviewLayer.connection?.videoOrientation = .landscapeLeft
-            videoPreviewLayer.frame = view.frame
+            videoPreviewLayer.connection?.videoOrientation = .landscapeRight
+            videoPreviewLayer.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 750)
+            videoPreviewLayer.isGeometryFlipped = true
             view.layer.addSublayer(videoPreviewLayer)
             
             let xPosition = (UIScreen.main.bounds.maxX) - 210
@@ -73,7 +75,7 @@ let entityName = "StoredImage"
             view.addSubview(buttonShoot)
             
             outputImageView.isHidden = true
-            outputImageView.frame = CGRect(x: (xPosition / 2) + 450, y: yPosition + 90 , width: 80, height: 80) //posisi
+            outputImageView.frame = CGRect(x: (xPosition / 7) - 20, y: yPosition + 60 , width: 250, height: 150) //posisi
             outputImageView.layer.borderColor = UIColor.gray.cgColor
             outputImageView.layer.borderWidth = 10
             outputImageView.layer.masksToBounds = true

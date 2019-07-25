@@ -18,4 +18,6 @@ class RoomsCollectionViewCell: UICollectionViewCell {
         roomName.text = data.roomLabel
     }
     
+    
+    
 }

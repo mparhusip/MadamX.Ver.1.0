@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import AVFoundation
 
 class StartPageViewController: UIViewController {
 
     var counter = 0
     
     var obj = [Activity]()
+    
+    var  typeWriterPlayer : AVAudioPlayer = AVAudioPlayer()
+    
     
     @IBOutlet weak var storyLabel: UILabel!
     
@@ -24,18 +28,23 @@ class StartPageViewController: UIViewController {
         "She would love it.",
         "WHO?????.....",
         "I am talking about the previous owner.",
-        "She was 89 years old when she died here few months ago.",
-        "She's been living here for years but no one actually knows her that well."
+        "No one really knows her that well but we call her Ms Mardo",
+        "That's not her real name though",
+        "She used to live here for years but she moved out around 5 months ago",
+        "If you found something that doesn't belong to you, that might be hers.",
+        "Rumors that she hides her fortune in random place around the house."
     ]
+    
     
     @IBAction func nextStoryButtonTap(_ sender: UIButton) {
         print(obj[counter].getName())
         storyLabel.text = ""
         
         counter+=1
+        starttypeWritterMusic()
         
         
-        if counter == 8 {
+        if counter == 11 {
             
         performSegue(withIdentifier: "prologue_segue", sender: nil)
         }else{
@@ -45,6 +54,7 @@ class StartPageViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.starttypeWritterMusic()
         self.animateStory()
     
     }
@@ -58,7 +68,18 @@ class StartPageViewController: UIViewController {
             storyLabel.text! += "\(char)"
             RunLoop.current.run(until: Date()+0.07)
         }
+        
+        typeWriterPlayer.stop()
     }
+    
+     func starttypeWritterMusic() {
+     let typewritterSound = Bundle.main.path(forResource: "Line 8", ofType: ".mp3")
+     let url = NSURL(fileURLWithPath: typewritterSound!)
+     typeWriterPlayer = try! AVAudioPlayer(contentsOf: url as URL)
+     typeWriterPlayer.prepareToPlay()
+     typeWriterPlayer.play()
+     
+     }
     
     @IBOutlet weak var nextStory: UIButton!
     

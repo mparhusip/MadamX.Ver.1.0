@@ -13,6 +13,15 @@
 		3169BE8A22DD73CA00B09861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3169BE8822DD73CA00B09861 /* Main.storyboard */; };
 		3169BE8C22DD73CB00B09861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3169BE8B22DD73CB00B09861 /* Assets.xcassets */; };
 		3169BE8F22DD73CB00B09861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3169BE8D22DD73CB00B09861 /* LaunchScreen.storyboard */; };
+		3169FFBD22E4C353005EA902 /* LogoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3169FFBC22E4C353005EA902 /* LogoPageViewController.swift */; };
+		3169FFBF22E4C35F005EA902 /* progressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3169FFBE22E4C35F005EA902 /* progressView.swift */; };
+		3169FFC122E4E294005EA902 /* Start Page Begin ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3169FFC022E4E294005EA902 /* Start Page Begin ViewController.swift */; };
+		3169FFC322E4E52F005EA902 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3169FFC222E4E52F005EA902 /* HomePageViewController.swift */; };
+		3169FFC522E4E542005EA902 /* Prologue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3169FFC422E4E542005EA902 /* Prologue1ViewController.swift */; };
+		3169FFC722E4E595005EA902 /* page awal- LOGO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3169FFC622E4E595005EA902 /* page awal- LOGO.mp3 */; };
+		3169FFCB22E4E5AA005EA902 /* In Game 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3169FFC822E4E5A9005EA902 /* In Game 3.wav */; };
+		3169FFCC22E4E5AA005EA902 /* Progress Page.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3169FFC922E4E5A9005EA902 /* Progress Page.mp3 */; };
+		3169FFCD22E4E5AA005EA902 /* typewriter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3169FFCA22E4E5AA005EA902 /* typewriter.mp3 */; };
 		318D1FF422E01FD00055B64B /* ContentStartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318D1FF322E01FD00055B64B /* ContentStartScene.swift */; };
 		318D1FF622E033B20055B64B /* StartUpContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318D1FF522E033B20055B64B /* StartUpContent.swift */; };
 		318D1FF822E264500055B64B /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318D1FF722E2644F0055B64B /* RoomViewController.swift */; };
@@ -29,6 +38,15 @@
 		318D202E22E2EC9F0055B64B /* GetDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318D202D22E2EC9F0055B64B /* GetDataViewController.swift */; };
 		318D203022E2ECA90055B64B /* SmartCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318D202F22E2ECA90055B64B /* SmartCameraViewController.swift */; };
 		318D203322E2ECB60055B64B /* ImageData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 318D203122E2ECB60055B64B /* ImageData.xcdatamodeld */; };
+		318D205722E45DDE0055B64B /* typewriterMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318D205622E45DDE0055B64B /* typewriterMusic.swift */; };
+		318D205922E46BCB0055B64B /* Line 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 318D205822E46BCB0055B64B /* Line 1.mp3 */; };
+		318D206122E46BDA0055B64B /* Line 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 318D205A22E46BDA0055B64B /* Line 2.mp3 */; };
+		318D206222E46BDA0055B64B /* Line 7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 318D205B22E46BDA0055B64B /* Line 7.mp3 */; };
+		318D206322E46BDA0055B64B /* Line 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 318D205C22E46BDA0055B64B /* Line 4.mp3 */; };
+		318D206422E46BDA0055B64B /* Line 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 318D205D22E46BDA0055B64B /* Line 6.mp3 */; };
+		318D206522E46BDA0055B64B /* Line 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 318D205E22E46BDA0055B64B /* Line 3.mp3 */; };
+		318D206622E46BDA0055B64B /* Line 8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 318D205F22E46BDA0055B64B /* Line 8.mp3 */; };
+		318D206722E46BDA0055B64B /* Line 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 318D206022E46BDA0055B64B /* Line 5.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +58,15 @@
 		3169BE8B22DD73CB00B09861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3169BE8E22DD73CB00B09861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3169BE9022DD73CB00B09861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3169FFBC22E4C353005EA902 /* LogoPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoPageViewController.swift; sourceTree = "<group>"; };
+		3169FFBE22E4C35F005EA902 /* progressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = progressView.swift; sourceTree = "<group>"; };
+		3169FFC022E4E294005EA902 /* Start Page Begin ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Start Page Begin ViewController.swift"; sourceTree = "<group>"; };
+		3169FFC222E4E52F005EA902 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		3169FFC422E4E542005EA902 /* Prologue1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prologue1ViewController.swift; sourceTree = "<group>"; };
+		3169FFC622E4E595005EA902 /* page awal- LOGO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "page awal- LOGO.mp3"; sourceTree = "<group>"; };
+		3169FFC822E4E5A9005EA902 /* In Game 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "In Game 3.wav"; sourceTree = "<group>"; };
+		3169FFC922E4E5A9005EA902 /* Progress Page.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Progress Page.mp3"; sourceTree = "<group>"; };
+		3169FFCA22E4E5AA005EA902 /* typewriter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = typewriter.mp3; sourceTree = "<group>"; };
 		318D1FF322E01FD00055B64B /* ContentStartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStartScene.swift; sourceTree = "<group>"; };
 		318D1FF522E033B20055B64B /* StartUpContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpContent.swift; sourceTree = "<group>"; };
 		318D1FF722E2644F0055B64B /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +83,15 @@
 		318D202D22E2EC9F0055B64B /* GetDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDataViewController.swift; sourceTree = "<group>"; };
 		318D202F22E2ECA90055B64B /* SmartCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartCameraViewController.swift; sourceTree = "<group>"; };
 		318D203222E2ECB60055B64B /* ImageData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageData.xcdatamodel; sourceTree = "<group>"; };
+		318D205622E45DDE0055B64B /* typewriterMusic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = typewriterMusic.swift; sourceTree = "<group>"; };
+		318D205822E46BCB0055B64B /* Line 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Line 1.mp3"; sourceTree = "<group>"; };
+		318D205A22E46BDA0055B64B /* Line 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Line 2.mp3"; sourceTree = "<group>"; };
+		318D205B22E46BDA0055B64B /* Line 7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Line 7.mp3"; sourceTree = "<group>"; };
+		318D205C22E46BDA0055B64B /* Line 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Line 4.mp3"; sourceTree = "<group>"; };
+		318D205D22E46BDA0055B64B /* Line 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Line 6.mp3"; sourceTree = "<group>"; };
+		318D205E22E46BDA0055B64B /* Line 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Line 3.mp3"; sourceTree = "<group>"; };
+		318D205F22E46BDA0055B64B /* Line 8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Line 8.mp3"; sourceTree = "<group>"; };
+		318D206022E46BDA0055B64B /* Line 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Line 5.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +129,18 @@
 				3169BE9622DD867F00B09861 /* Model */,
 				3169BE8422DD73CA00B09861 /* art.scnassets */,
 				3169BE8B22DD73CB00B09861 /* Assets.xcassets */,
+				318D205822E46BCB0055B64B /* Line 1.mp3 */,
+				3169FFC822E4E5A9005EA902 /* In Game 3.wav */,
+				3169FFC922E4E5A9005EA902 /* Progress Page.mp3 */,
+				3169FFCA22E4E5AA005EA902 /* typewriter.mp3 */,
+				318D205A22E46BDA0055B64B /* Line 2.mp3 */,
+				3169FFC622E4E595005EA902 /* page awal- LOGO.mp3 */,
+				318D205E22E46BDA0055B64B /* Line 3.mp3 */,
+				318D205C22E46BDA0055B64B /* Line 4.mp3 */,
+				318D206022E46BDA0055B64B /* Line 5.mp3 */,
+				318D205D22E46BDA0055B64B /* Line 6.mp3 */,
+				318D205B22E46BDA0055B64B /* Line 7.mp3 */,
+				318D205F22E46BDA0055B64B /* Line 8.mp3 */,
 				3169BE8D22DD73CB00B09861 /* LaunchScreen.storyboard */,
 				3169BE9022DD73CB00B09861 /* Info.plist */,
 			);
@@ -105,6 +153,7 @@
 				318D1FFF22E264AA0055B64B /* RoomsCollectionViewCell.swift */,
 				318D1FF322E01FD00055B64B /* ContentStartScene.swift */,
 				318D200322E264DA0055B64B /* StartPage.swift */,
+				318D205622E45DDE0055B64B /* typewriterMusic.swift */,
 				318D203122E2ECB60055B64B /* ImageData.xcdatamodeld */,
 				318D200122E264C70055B64B /* RoomsModel.swift */,
 				318D1FF522E033B20055B64B /* StartUpContent.swift */,
@@ -126,15 +175,20 @@
 				318D202722E2EC5C0055B64B /* ModelController.swift */,
 				3169BE8622DD73CA00B09861 /* ViewController.swift */,
 				318D200522E2B7B20055B64B /* StartSceneViewController.swift */,
+				3169FFBE22E4C35F005EA902 /* progressView.swift */,
+				3169FFC422E4E542005EA902 /* Prologue1ViewController.swift */,
+				3169FFBC22E4C353005EA902 /* LogoPageViewController.swift */,
 				318D202922E2EC690055B64B /* ImageController.swift */,
+				3169FFC222E4E52F005EA902 /* HomePageViewController.swift */,
 				3169BE8222DD73CA00B09861 /* AppDelegate.swift */,
+				318D1FF922E2646B0055B64B /* ProfileViewController.swift */,
 				318D1FF722E2644F0055B64B /* RoomViewController.swift */,
 				318D202B22E2EC970055B64B /* InsertNameViewController.swift */,
 				318D202D22E2EC9F0055B64B /* GetDataViewController.swift */,
 				318D202F22E2ECA90055B64B /* SmartCameraViewController.swift */,
 				318D1FFD22E264990055B64B /* PrologueViewController.swift */,
-				318D1FF922E2646B0055B64B /* ProfileViewController.swift */,
 				318D1FFB22E264830055B64B /* StartPageViewController.swift */,
+				3169FFC022E4E294005EA902 /* Start Page Begin ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,10 +251,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				318D206222E46BDA0055B64B /* Line 7.mp3 in Resources */,
+				3169FFCB22E4E5AA005EA902 /* In Game 3.wav in Resources */,
+				318D206722E46BDA0055B64B /* Line 5.mp3 in Resources */,
 				3169BE8522DD73CA00B09861 /* art.scnassets in Resources */,
 				3169BE8F22DD73CB00B09861 /* LaunchScreen.storyboard in Resources */,
+				318D206422E46BDA0055B64B /* Line 6.mp3 in Resources */,
 				3169BE8C22DD73CB00B09861 /* Assets.xcassets in Resources */,
+				318D206322E46BDA0055B64B /* Line 4.mp3 in Resources */,
+				3169FFCC22E4E5AA005EA902 /* Progress Page.mp3 in Resources */,
 				3169BE8A22DD73CA00B09861 /* Main.storyboard in Resources */,
+				318D206122E46BDA0055B64B /* Line 2.mp3 in Resources */,
+				3169FFCD22E4E5AA005EA902 /* typewriter.mp3 in Resources */,
+				318D206622E46BDA0055B64B /* Line 8.mp3 in Resources */,
+				318D205922E46BCB0055B64B /* Line 1.mp3 in Resources */,
+				318D206522E46BDA0055B64B /* Line 3.mp3 in Resources */,
+				3169FFC722E4E595005EA902 /* page awal- LOGO.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,12 +281,16 @@
 				3169BE8722DD73CA00B09861 /* ViewController.swift in Sources */,
 				318D203022E2ECA90055B64B /* SmartCameraViewController.swift in Sources */,
 				318D1FF622E033B20055B64B /* StartUpContent.swift in Sources */,
+				3169FFBD22E4C353005EA902 /* LogoPageViewController.swift in Sources */,
 				318D200022E264AA0055B64B /* RoomsCollectionViewCell.swift in Sources */,
 				318D200222E264C70055B64B /* RoomsModel.swift in Sources */,
 				318D202C22E2EC970055B64B /* InsertNameViewController.swift in Sources */,
 				318D203322E2ECB60055B64B /* ImageData.xcdatamodeld in Sources */,
 				318D202822E2EC5C0055B64B /* ModelController.swift in Sources */,
+				3169FFC322E4E52F005EA902 /* HomePageViewController.swift in Sources */,
 				318D1FFE22E264990055B64B /* PrologueViewController.swift in Sources */,
+				3169FFC122E4E294005EA902 /* Start Page Begin ViewController.swift in Sources */,
+				3169FFC522E4E542005EA902 /* Prologue1ViewController.swift in Sources */,
 				318D202A22E2EC690055B64B /* ImageController.swift in Sources */,
 				3169BE8322DD73CA00B09861 /* AppDelegate.swift in Sources */,
 				318D1FF822E264500055B64B /* RoomViewController.swift in Sources */,
@@ -229,6 +299,8 @@
 				318D200422E264DA0055B64B /* StartPage.swift in Sources */,
 				318D1FFC22E264830055B64B /* StartPageViewController.swift in Sources */,
 				318D202E22E2EC9F0055B64B /* GetDataViewController.swift in Sources */,
+				318D205722E45DDE0055B64B /* typewriterMusic.swift in Sources */,
+				3169FFBF22E4C35F005EA902 /* progressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
